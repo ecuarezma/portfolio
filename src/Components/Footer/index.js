@@ -3,7 +3,7 @@ import classes from "./footer.module.css";
 
 const Footer = props => {
   return (
-    <div>
+    <div className={classes.Footer}>
       <p>github, linkedIn, insta?</p>
     </div>
   );
