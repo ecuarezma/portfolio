@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import { Switch, Route } from "react-router-dom";
+import Header from "./Components/Header";
+import Home from "./Pages/Home";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import "./App.css";
@@ -14,11 +17,14 @@ class App extends Component {
   render() {
     return (
       <div>
-        <ul>
-          <li>header</li>
-          <Navbar darkMode={this.state.isDarkMode} />
-          <Footer />
-        </ul>
+        <Header />
+        <Switch>
+          <Route path="/" render={() => <Home />} />
+          <Route />
+          <Route />
+        </Switch>
+        <Navbar darkMode={this.state.isDarkMode} />
+        <Footer />
       </div>
     );
   }
