@@ -18,9 +18,15 @@
 
 .Header .title {
   position: relative;
+  top: 1rem;
   font-family: "Fira Sans", sans-serif;
-  font-size: 2rem;
   color: rgb(164, 164, 164);
   text-align: center;
   z-index: 100;
+}
+
+.Header h1,
+.Header h3 {
+  margin: 0;
+  padding: 0;
 }
