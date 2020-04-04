@@ -1,4 +1,14 @@
-.Footer p {
-  margin: 0;
-  padding: 0;
+/* mobile  */
+@media (max-width: 600px) {
+  .Footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+
+  .Footer p {
+    margin: 0;
+    padding: 0;
+  }
 }
