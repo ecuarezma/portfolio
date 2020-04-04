@@ -1,24 +1,20 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const style = {
-  color: "black",
-  textDecoration: "none",
-  active: {
-    color: "red"
-  }
-};
+import classes from "./link.module.css";
 
 const Link = props => {
   return (
-    <NavLink
-      exact
-      to={`/${props.children}`}
-      style={style}
-      activeStyle={style.active}
-    >
-      {props.children}
-    </NavLink>
+    <div>
+      <NavLink
+        exact
+        to={`/${props.children}`}
+        className={classes.Link}
+        activeClassName={classes.active}
+      >
+        {props.children}
+      </NavLink>
+    </div>
   );
 };
 

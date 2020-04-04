@@ -1,12 +1,10 @@
 import React, { Component } from "react";
-import { Switch, Route } from "react-router-dom";
+
 import Header from "./Components/Header";
-import Home from "./Pages/Home";
-import Apps from "./Pages/Apps";
-import Projects from "./Pages/Projects";
-import CV from "./Pages/CV";
+import Routes from "./Components/Routes";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import Content from "./Components/Content";
 import "./App.css";
 
 class App extends Component {
@@ -21,12 +19,9 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <Switch>
-          <Route path="/" exact render={() => <Home />} />
-          <Route path="/Apps" exact render={() => <Apps />} />
-          <Route path="/Projects" exact render={() => <Projects />} />
-          <Route path="/CV" exact render={() => <CV />} />
-        </Switch>
+        <Content>
+          <Routes />
+        </Content>
         <Navbar darkMode={this.state.isDarkMode} />
         <Footer />
       </div>

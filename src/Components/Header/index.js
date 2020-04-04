@@ -1,9 +1,13 @@
 import React from "react";
+import classes from "./header.module.css";
 
 const Header = props => {
   return (
-    <div>
-      <header>Edgar Cuarezma</header>
+    <div className={classes.Header}>
+      <div className={classes.title}>
+        <header>Edgar Cuarezma</header>
+      </div>
+      <div className={classes.polygon}></div>
     </div>
   );
 };
