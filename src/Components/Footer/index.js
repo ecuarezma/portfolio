@@ -6,10 +6,16 @@ const Footer = props => {
     <div className={classes.Footer}>
       <div className={classes.polygon}></div>
       <div className={classes.icons}>
-        <i class="far fa-envelope"></i>
+        <a href="mailto: ecuarezma@gmail.com">
+          <i class="far fa-envelope"></i>
+        </a>
         <div className={classes.verticalIcons}>
-          <i class="fab fa-linkedin"></i>
-          <i class="fab fa-github"></i>
+          <a href="https://www.linkedin.com/in/cuarezma/">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/ecuarezma">
+            <i class="fab fa-github"></i>
+          </a>
         </div>
       </div>
     </div>

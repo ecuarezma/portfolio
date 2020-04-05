@@ -1,10 +1,13 @@
 import React from "react";
-import classes from "./home.module.css";
+import classes from "./home.module.scss";
+import profile from "../../assets/profile.jpg";
 
 const Home = props => {
   return (
     <div className={classes.Home}>
-      <header>Welcome to the homepage!</header>
+      <div className={classes.polygon}>
+        <img className={classes.profile} src={profile} alt="profile" />
+      </div>
     </div>
   );
 };
