@@ -7,6 +7,8 @@ const Home = props => {
     <div className={classes.Home}>
       <div className={classes.polygon}>
         <img className={classes.profile} src={profile} alt="profile" />
+        <img className={classes.profile} src={profile} alt="profile" />
+        <img className={classes.profile} src={profile} alt="profile" />
       </div>
     </div>
   );
