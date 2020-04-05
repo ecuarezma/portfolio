@@ -1,15 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import classes from "./link.module.css";
+import classes from "./link.module.scss";
 
 const Link = props => {
   return (
-    <div>
+    <div className={classes.Link}>
       <NavLink
         exact
-        to={`/${props.children}`}
-        className={classes.Link}
+        to={`/${props.children.toLowerCase()}`}
         activeClassName={classes.active}
       >
         {props.children}

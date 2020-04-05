@@ -1,0 +1,30 @@
+.Footer {
+  position: absolute;
+  height: 13vh;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  .polygon {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(74, 136, 135);
+    clip-path: polygon(100% 0, 20% 100%, 100% 100%);
+  }
+  .icons {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    bottom: 70px;
+    font-size: 1.5rem;
+    .verticalIcons {
+      margin: 0 5px;
+      display: flex;
+      flex-flow: column nowrap;
+    }
+    svg {
+      margin: 5px;
+      color: oldlace;
+    }
+  }
+}

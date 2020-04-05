@@ -7,7 +7,7 @@ const Header = props => {
       <div className={classes.title}>
         <header>
           <h1>Edgar Cuarezma</h1>
-          <h3>Web App Developer</h3>
+          <h3>Full Stack Developer</h3>
         </header>
       </div>
       <div className={classes.polygon}></div>

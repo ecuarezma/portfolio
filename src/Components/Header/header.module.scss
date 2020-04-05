@@ -1,32 +1,33 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,200&display=swap");
+$fontColor: rgb(164, 164, 164);
+$bgColor: rgb(17, 10, 10);
 
 .Header {
-  position: fixed;
+  position: relative;
   top: 0;
   height: 20vh;
   width: 100%;
-}
-
-.Header .polygon {
-  position: relative;
-  top: -38px;
-  height: 100%;
-  width: 100%;
-  background-color: rgb(17, 10, 10);
-  clip-path: polygon(0 0, 100% 0, 100% 40%, 0% 100%);
-}
-
-.Header .title {
-  position: relative;
-  top: 1rem;
-  font-family: "Fira Sans", sans-serif;
-  color: rgb(164, 164, 164);
-  text-align: center;
-  z-index: 100;
-}
-
-.Header h1,
-.Header h3 {
-  margin: 0;
-  padding: 0;
+  .polygon {
+    position: relative;
+    top: -60px;
+    height: 100%;
+    width: 100%;
+    background-color: $bgColor;
+    clip-path: polygon(0 0, 100% 0, 100% 40%, 0% 100%);
+  }
+  .title {
+    position: relative;
+    top: 1rem;
+    font-family: "Fira Sans", sans-serif;
+    color: $fontColor;
+    text-align: center;
+    z-index: 100;
+  }
+  h1,
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+  h3 {
+    font-weight: 200;
+  }
 }
