@@ -1,12 +1,20 @@
 .Home {
+  position: relative;
+  top: 45px;
+  z-index: -1;
+  font-family: "Roboto", sans-serif;
   .polygon {
-    position: relative;
-    top: 45px;
     height: 50vh;
     clip-path: polygon(0 23%, 100% 0, 100% 100%, 0% 100%);
-    z-index: -1;
     .profile {
+      position: relative;
+      top: -25px;
       width: 100%;
     }
+  }
+  .content {
+    text-align: center;
+    margin: 1rem;
+    border-top: 2px solid rgb(17, 10, 10);
   }
 }

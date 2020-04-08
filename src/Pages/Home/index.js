@@ -7,9 +7,13 @@ const Home = props => {
     <div className={classes.Home}>
       <div className={classes.polygon}>
         <img className={classes.profile} src={profile} alt="profile" />
-        <img className={classes.profile} src={profile} alt="profile" />
-        <img className={classes.profile} src={profile} alt="profile" />
       </div>
+      <article className={classes.content}>
+        <p>
+          Having walked many paths in life, I strive to learn the depths of web
+          programming.
+        </p>
+      </article>
     </div>
   );
 };
