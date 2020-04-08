@@ -3,6 +3,10 @@
   background-color: tomato;
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
+  border-bottom: 1px solid oldlace;
+  &:last-child {
+    border-bottom: none;
+  }
   a {
     padding-left: 0.5rem;
     vertical-align: middle;

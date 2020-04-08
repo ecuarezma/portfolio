@@ -1,20 +1,36 @@
 .Home {
   position: relative;
-  top: 45px;
+  bottom: 140px;
+  height: 100%;
   z-index: -1;
   font-family: "Roboto", sans-serif;
-  .polygon {
-    height: 50vh;
-    clip-path: polygon(0 23%, 100% 0, 100% 100%, 0% 100%);
-    .profile {
-      position: relative;
-      top: -25px;
+
+  .profile {
+    margin: 1rem;
+    margin-top: 200px;
+    clip-path: polygon(100% 0, 100% 85%, 50% 95%, 0 85%, 0 0);
+    .profileImage {
       width: 100%;
     }
   }
+
+  .chevronDown {
+    display: flex;
+    margin: -1rem 1rem 1rem 1rem;
+    div {
+      margin: 0 -2.5px;
+      padding: 0;
+      width: 100%;
+      border-top: 2px solid rgb(17, 10, 10);
+      transform: rotate(15deg);
+      &:last-child {
+        transform: rotate(-15deg);
+      }
+    }
+  }
+
   .content {
     text-align: center;
-    margin: 1rem;
-    border-top: 2px solid rgb(17, 10, 10);
+    margin: 3rem 1rem;
   }
 }
