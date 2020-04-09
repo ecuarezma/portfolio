@@ -17,8 +17,8 @@ const Home = props => {
 
       <article className={classes.content}>
         <p>
-          Having walked many paths in life, I strive to learn the depths of web
-          programming.
+          "Having walked many paths in life, I strive to learn the depths of web
+          programming"
         </p>
         <Skills />
       </article>
