@@ -5,13 +5,13 @@ const Skills = () => {
   return (
     <div className={classes.Skills}>
       <div className={classes.icons}>
-        <i class="fab fa-js-square"></i>
-        <i class="fab fa-css3-alt"></i>
-        <i class="fab fa-html5"></i>
-        <i class="fab fa-react"></i>
+        <i className="fab fa-js-square"></i>
+        <i className="fab fa-css3-alt"></i>
+        <i className="fab fa-html5"></i>
+        <i className="fab fa-react"></i>
       </div>
       <div className={classes.icons}>
-        <i class="fab fa-node-js"></i>
+        <i className="fab fa-node-js"></i>
       </div>
     </div>
   );

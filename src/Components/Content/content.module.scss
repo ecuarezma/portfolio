@@ -1,0 +1,10 @@
+@import "../../Pages/Styles/colors";
+
+.Content {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+  p {
+    color: $textColor;
+  }
+}

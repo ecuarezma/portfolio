@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import Header from "./Components/Header";
+import Content from "./Components/Content";
 import Routes from "./Components/Routes";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
@@ -18,7 +19,9 @@ class App extends Component {
     return (
       <>
         <Header />
-        <Routes />
+        <Content>
+          <Routes />
+        </Content>
         <Navbar darkMode={this.state.isDarkMode} />
         <Footer />
       </>
