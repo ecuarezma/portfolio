@@ -1,0 +1,15 @@
+.Skills {
+  margin: 1rem;
+  .icons {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+    font-size: 4rem;
+    svg {
+      color: tomato;
+      &:nth-child(even) {
+        color: rgb(74, 136, 135);
+      }
+    }
+  }
+}
