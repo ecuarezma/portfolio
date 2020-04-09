@@ -1,9 +1,11 @@
+@import "../../../Pages/Styles/colors";
+
 .Link {
   height: 30px;
-  background-color: tomato;
+  background-color: $orange;
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
-  border-bottom: 1px solid oldlace;
+  border-bottom: 1px solid $mainBgColor;
   &:last-child {
     border-bottom: none;
   }
@@ -11,9 +13,9 @@
     padding-left: 0.5rem;
     vertical-align: middle;
     text-decoration: none;
-    color: black;
+    color: $textColor;
   }
   .active {
-    color: white;
+    color: $mainBgColor;
   }
 }

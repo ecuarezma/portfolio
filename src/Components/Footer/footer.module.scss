@@ -1,3 +1,5 @@
+@import "../../Pages/Styles/colors";
+
 .Footer {
   position: fixed;
   height: 13vh;
@@ -7,7 +9,7 @@
   .polygon {
     height: 100%;
     width: 100%;
-    background-color: rgb(74, 136, 135);
+    background-color: $blue;
     clip-path: polygon(100% 0, 20% 100%, 100% 100%);
   }
   .icons {
@@ -24,7 +26,7 @@
     }
     svg {
       margin: 5px;
-      color: oldlace;
+      color: $mainBgColor;
     }
   }
 }

@@ -1,3 +1,5 @@
+@import "../../Pages/Styles/colors";
+
 .Skills {
   margin: 1rem;
   .icons {
@@ -6,9 +8,9 @@
     justify-content: space-around;
     font-size: 4rem;
     svg {
-      color: tomato;
+      color: $orange;
       &:nth-child(even) {
-        color: rgb(74, 136, 135);
+        color: $blue;
       }
     }
   }

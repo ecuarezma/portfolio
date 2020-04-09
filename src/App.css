@@ -6,8 +6,3 @@
   width: 100vw;
   background-color: oldlace;
 }
-
-.App {
-  display: flex;
-  flex-flow: column nowrap;
-}
