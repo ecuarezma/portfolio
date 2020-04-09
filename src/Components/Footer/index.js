@@ -3,7 +3,7 @@ import classes from "./footer.module.scss";
 
 const Footer = props => {
   return (
-    <div className={classes.Footer}>
+    <footer className={classes.Footer}>
       <div className={classes.polygon}></div>
       <div className={classes.icons}>
         <a href="mailto: ecuarezma@gmail.com">
@@ -18,7 +18,7 @@ const Footer = props => {
           </a>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

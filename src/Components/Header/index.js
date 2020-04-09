@@ -3,15 +3,13 @@ import classes from "./header.module.scss";
 
 const Header = props => {
   return (
-    <div className={classes.Header}>
+    <header className={classes.Header}>
       <div className={classes.title}>
-        <header>
-          <h1>Edgar Cuarezma</h1>
-          <h3>Full Stack Developer</h3>
-        </header>
+        <h1>Edgar Cuarezma</h1>
+        <h3>Full Stack Developer</h3>
       </div>
       <div className={classes.polygon}></div>
-    </div>
+    </header>
   );
 };
 

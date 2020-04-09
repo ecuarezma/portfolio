@@ -4,7 +4,6 @@ import Header from "./Components/Header";
 import Routes from "./Components/Routes";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
-import Content from "./Components/Content";
 import "./App.css";
 
 class App extends Component {
@@ -17,14 +16,12 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <>
         <Header />
-        <Content>
-          <Routes />
-        </Content>
+        <Routes />
         <Navbar darkMode={this.state.isDarkMode} />
         <Footer />
-      </div>
+      </>
     );
   }
 }
