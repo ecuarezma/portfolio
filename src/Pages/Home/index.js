@@ -1,4 +1,5 @@
 import React from "react";
+import Skills from "./Skills";
 import classes from "./home.module.scss";
 import profile from "../../assets/profile.jpg";
 
@@ -19,22 +20,7 @@ const Home = props => {
           Having walked many paths in life, I strive to learn the depths of web
           programming.
         </p>
-        <p>
-          Having walked many paths in life, I strive to learn the depths of web
-          programming.
-        </p>
-        <p>
-          Having walked many paths in life, I strive to learn the depths of web
-          programming.
-        </p>
-        <p>
-          Having walked many paths in life, I strive to learn the depths of web
-          programming.
-        </p>
-        <p>
-          Having walked many paths in life, I strive to learn the depths of web
-          programming.
-        </p>
+        <Skills />
       </article>
     </div>
   );
