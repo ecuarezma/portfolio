@@ -1,11 +1,7 @@
 .Home {
-  position: relative;
-  bottom: 140px;
-  z-index: -1;
-
+  margin-top: 350px;
   .profile {
     margin: 1rem;
-    margin-top: 185px;
     clip-path: polygon(100% 0, 100% 85%, 50% 95%, 0 85%, 0 0);
     .profileImage {
       width: 100%;

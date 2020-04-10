@@ -6,3 +6,11 @@
   width: 100vw;
   background-color: oldlace;
 }
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  height: 85%;
+  margin: 0;
+}

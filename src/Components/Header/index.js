@@ -1,6 +1,6 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
-import classes from "./header.module.scss";
+import classes from "./Header.module.scss";
 
 const Header = props => {
   const handleClick = () => {

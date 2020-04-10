@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./content.module.scss";
+import classes from "./Content.module.scss";
 
 const Content = props => {
   return <div className={classes.Content}>{props.children}</div>;

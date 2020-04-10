@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "./Link";
-import classes from "./navbar.module.css";
+import classes from "./Navbar.module.css";
 
 const Navbar = props => {
   return (

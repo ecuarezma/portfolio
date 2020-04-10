@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import classes from "./link.module.scss";
+import classes from "./Link.module.scss";
 
 const Link = props => {
   return (
