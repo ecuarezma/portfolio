@@ -11,8 +11,8 @@ const Home = () => {
       </div>
 
       <div className={classes.chevronDown}>
-        <div></div>
-        <div></div>
+        <div />
+        <div />
       </div>
 
       <article className={classes.content}>

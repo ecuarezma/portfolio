@@ -3,10 +3,14 @@ import classes from "./Card.module.scss";
 
 const Card = props => {
   return (
-    <div className={classes.Card}>
-      <figcaption>{props.children}</figcaption>
-      <img src={props.src} alt="" />
-    </div>
+    <>
+      <div className={classes.Card}>
+        <h4>{props.title}</h4>
+        <img src={props.src} alt="" />
+        <figcaption>{props.children}</figcaption>
+      </div>
+      <div className={classes.background} />
+    </>
   );
 };
 

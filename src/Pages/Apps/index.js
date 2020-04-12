@@ -1,12 +1,14 @@
 import React from "react";
 import Card from "../../Components/Card";
 import classes from "./Apps.module.scss";
-import image from "../../assets/soft-riders.png";
+import softRiders from "../../assets/soft-riders.png";
 
 const Apps = () => {
   return (
     <article className={classes.Apps}>
-      <Card src={image}>Soft Riders App</Card>
+      <Card src={softRiders} title="Soft Riders">
+        A curated playlist hub by host, Miki Lee
+      </Card>
     </article>
   );
 };

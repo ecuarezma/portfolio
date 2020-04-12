@@ -13,7 +13,7 @@ const Header = props => {
         <h1>Edgar Cuarezma</h1>
         <h3>Full Stack Developer</h3>
       </div>
-      <div className={classes.polygon}></div>
+      <div className={classes.polygon} />
     </header>
   );
 };
