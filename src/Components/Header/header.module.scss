@@ -1,14 +1,14 @@
 .Header {
   position: fixed;
   top: 0;
-  height: 20vh;
+  height: 23vh;
   width: 100%;
   .polygon {
     position: relative;
     top: -60px;
     height: 100%;
     width: 100%;
-    background-color: rgb(17, 10, 10);
+    background-color: rgb(34, 26, 26);
     clip-path: polygon(0 0, 100% 0, 100% 40%, 0% 100%);
   }
   .title {
