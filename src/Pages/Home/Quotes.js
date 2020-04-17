@@ -28,7 +28,7 @@ function Quotes() {
     return (
       <blockquote>
         <p>
-          <em>"What's done is done"</em>
+          <em>"404s and heartbreaks"</em>
         </p>
       </blockquote>
     );
