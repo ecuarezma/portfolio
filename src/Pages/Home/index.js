@@ -1,5 +1,6 @@
 import React from "react";
 import Skills from "./Skills";
+import Quotes from "./Quotes";
 import classes from "./Home.module.scss";
 import profile from "../../assets/profile.jpg";
 
@@ -16,12 +17,7 @@ const Home = () => {
       </div>
 
       <article className={classes.content}>
-        <p>
-          <em>
-            "Having walked many paths in life, each one has shaped me into who I
-            am today"
-          </em>
-        </p>
+        <Quotes />
         <Skills />
         <hr />
         <p>
