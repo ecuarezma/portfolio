@@ -7,7 +7,7 @@ function Quotes() {
 
   useEffect(() => {
     fetch(
-      "https://api.quotable.io/random?tags=science|technology|education&maxLength=100"
+      "https://api.quotable.io/random?tags=science|technology&maxLength=100"
     )
       .then((res) => res.json())
       .then(
@@ -36,7 +36,7 @@ function Quotes() {
     return <div>Loading...</div>;
   } else {
     return (
-      <blockquote>
+      <blockquote style={{ margin: 0 }}>
         <p>"{quote.content}"</p>
         <footer>
           <cite>— {quote.author}</cite>
