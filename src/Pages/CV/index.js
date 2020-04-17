@@ -1,12 +1,9 @@
 import React from "react";
-import resume from "../../assets/dev_resume.pdf";
+
+import classes from "./CV.module.scss";
 
 const CV = (props) => {
-  return (
-    <div>
-      <img src="resume" alt="" />
-    </div>
-  );
+  return <div className={classes.CV}></div>;
 };
 
 export default CV;
