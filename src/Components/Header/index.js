@@ -1,8 +1,10 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
+import Particles from "react-particles-js";
+import config from "./particles";
 import classes from "./Header.module.scss";
 
-const Header = props => {
+const Header = (props) => {
   const handleClick = () => {
     props.history.push("/");
   };
@@ -13,7 +15,7 @@ const Header = props => {
         <h1>Edgar Cuarezma</h1>
         <h3>Full Stack Developer</h3>
       </div>
-      <div className={classes.polygon} />
+      <Particles className={classes.polygon} params={config} />
     </header>
   );
 };
