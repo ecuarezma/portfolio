@@ -17,7 +17,9 @@ const Home = () => {
       </div>
 
       <article className={classes.content}>
-        <Quotes />
+        <div className={classes.quotes}>
+          <Quotes />
+        </div>
         <Skills />
         <hr />
         <p>

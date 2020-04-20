@@ -20,6 +20,7 @@ const config = {
       value: 4,
     },
     opacity: {
+      value: 0.4,
       anim: {
         enable: false,
         random: true,
