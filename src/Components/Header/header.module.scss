@@ -3,6 +3,7 @@
   top: 0;
   height: 23vh;
   width: 100%;
+  z-index: 100;
   .polygon {
     position: relative;
     top: -60px;
@@ -17,7 +18,7 @@
     font-family: "Fira Sans", sans-serif;
     color: rgb(164, 164, 164);
     text-align: center;
-    z-index: 100;
+    z-index: 200;
   }
   h1,
   h3 {
