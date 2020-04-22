@@ -6,6 +6,7 @@ import Home from "../../Pages/Home";
 import Apps from "../../Pages/Apps";
 import Projects from "../../Pages/Projects";
 import CV from "../../Pages/CV";
+import Content from "../../Components/Content";
 import "./styles.css";
 
 const Routes = () => {
@@ -30,9 +31,11 @@ const Routes = () => {
               classNames="page"
               unmountOnExit
             >
-              <div className="page">
-                <Component />
-              </div>
+              <Content>
+                <div className="page">
+                  <Component />
+                </div>
+              </Content>
             </CSSTransition>
           )}
         </Route>
