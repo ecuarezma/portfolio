@@ -6,7 +6,7 @@
   width: 100vw;
 }
 
-body {
+.background {
   margin: 0;
   background-color: oldlace;
   background-image: repeating-linear-gradient(

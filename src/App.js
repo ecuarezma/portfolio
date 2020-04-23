@@ -16,12 +16,12 @@ class App extends Component {
 
   render() {
     return (
-      <>
+      <div className={"background"}>
         <Header />
         <Routes />
         <Navbar darkMode={this.state.isDarkMode} />
         <Footer />
-      </>
+      </div>
     );
   }
 }
