@@ -8,10 +8,6 @@
 
 body {
   margin: 0;
-  background-color: oldlace;
-  background-image: repeating-linear-gradient(
-    60deg,
-    rgb(245, 232, 232) 0 2px,
-    transparent 0 9px
-  );
+  background-color: #fdf5e6;
+  background: repeating-linear-gradient(60deg, #f5e8e8 0 2px, #fdf5e6 0 9px);
 }
