@@ -5,7 +5,7 @@ import { CSSTransition } from "react-transition-group";
 import Home from "../../Pages/Home";
 import Apps from "../../Pages/Apps";
 import Projects from "../../Pages/Projects";
-import CV from "../../Pages/CV";
+// import CV from "../../Pages/CV";
 import "./styles.css";
 
 const Routes = () => {
