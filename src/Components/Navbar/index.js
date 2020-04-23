@@ -14,7 +14,7 @@ const Navbar = (props) => {
           CV
         </a>
       </div>
-      <Link>Blog</Link>
+      {/* <Link>Blog</Link> */}
     </nav>
   );
 };

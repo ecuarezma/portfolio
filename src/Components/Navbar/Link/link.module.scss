@@ -1,9 +1,11 @@
 @import "../../../Pages/Styles/colors";
 
 .Link {
+  width: 100%;
   padding: 2px;
   background-color: $orange;
   font-family: "Roboto", sans-serif;
+  font-weight: bold;
   font-size: 1.25rem;
   border-bottom: 1px solid $mainBgColor;
   &:first-child {
@@ -16,9 +18,15 @@
     padding-left: 0.5rem;
     vertical-align: middle;
     text-decoration: none;
-    color: $textColor;
+    color: $mainBgColor;
+    transition: all 200ms ease-out;
+    & :focus {
+      background-color: none;
+    }
   }
   .active {
-    color: $mainBgColor;
+    color: rgb(79, 44, 44);
+    font-weight: normal;
+    transition: all 200ms ease-in;
   }
 }

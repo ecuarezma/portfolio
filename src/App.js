@@ -17,14 +17,12 @@ class App extends Component {
 
   render() {
     return (
-      <>
+      <Content>
         <Header />
-        <Content>
-          <Routes />
-        </Content>
+        <Routes />
         <Navbar darkMode={this.state.isDarkMode} />
         <Footer />
-      </>
+      </Content>
     );
   }
 }
