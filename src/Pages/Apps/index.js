@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../../Components/Card";
+
 import classes from "./Apps.module.scss";
 import softRiders from "../../assets/soft-riders.png";
 
