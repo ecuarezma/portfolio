@@ -6,7 +6,11 @@ import softRiders from "../../assets/soft-riders.png";
 const Apps = () => {
   return (
     <article className={classes.Apps}>
-      <Card src={softRiders} title="Soft Riders">
+      <Card
+        src={softRiders}
+        title="Soft Riders"
+        link="http://www.soft-riders.com"
+      >
         A curated playlist hub by host, Miki Lee
       </Card>
     </article>
