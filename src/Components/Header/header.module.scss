@@ -1,18 +1,17 @@
 .Header {
   position: fixed;
-  top: 0;
   height: 150px;
   width: 100%;
   z-index: 100;
   .polygon {
     position: relative;
-    top: -66px;
+    top: -70px;
     background-color: #221a1a;
     clip-path: polygon(0 0, 100% 0, 100% 40%, 0% 100%);
   }
   .title {
     position: relative;
-    top: 10px;
+    top: 20px;
     font-family: "Fira Sans", sans-serif;
     color: rgb(164, 164, 164);
     text-align: center;
