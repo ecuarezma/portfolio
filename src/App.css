@@ -9,5 +9,11 @@
 body {
   margin: 0;
   background-color: #fdf5e6;
-  background: repeating-linear-gradient(60deg, #f5e8e8 0 2px, #fdf5e6 2px 9px);
+  background: repeating-linear-gradient(
+    60deg,
+    #f5e8e8 0,
+    #f5e8e8 2px,
+    #fdf5e6 2px,
+    #fdf5e6 9px
+  );
 }
