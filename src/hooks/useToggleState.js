@@ -7,5 +7,4 @@ function useToggle(initVal = true) {
   };
   return [state, toggle];
 }
-
 export default useToggle;

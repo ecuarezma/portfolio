@@ -3,7 +3,7 @@
 .Card {
   margin-top: 2rem;
   border: 10px solid;
-  border-image: linear-gradient(rgba(0, 0, 0, 0) 25%, rgba($blue, 0.6)) 5;
+  border-image: linear-gradient(rgba(0, 0, 0, 0) 25%, $borderBlue) 5;
 
   img {
     border: 2px solid $textColor;
@@ -29,7 +29,7 @@
     padding-top: 4px;
     font-weight: bold;
     color: $mainBgColor;
-    background-color: rgba($blue, 0.6);
+    background-color: $borderBlue;
     text-align: center;
   }
 }
