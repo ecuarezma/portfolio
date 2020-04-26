@@ -1,10 +1,12 @@
 import React from "react";
+import { CSSTransition } from "react-transition-group";
 import useToggleState from "../../hooks/useToggleState";
-import Modal from "../Modal";
+import CardInfo from "./CardInfo";
 import classes from "./Card.module.scss";
+import "./CardInfo/info.css";
 
-const Card = ({ link, title, src, children }) => {
-  const [isShowing, toggleShow] = useToggleState();
+const Card = ({ link, title, src, caption, children }) => {
+  const [isShowing, toggleShow] = useToggleState(false);
 
   return (
     <>
@@ -13,15 +15,18 @@ const Card = ({ link, title, src, children }) => {
           <a href={link}>{title}</a>
         </h4>
         <img src={src} alt="" />
-        <figcaption onClick={toggleShow}>{children}</figcaption>
-      </div>
-      <Modal show={isShowing}>
-        <figcaption id="info">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam magnam
-          quasi maxime nam, eveniet minus cum tempora optio nisi maiores vero
-          repellat sunt, in ipsum asperiores nemo consectetur! Sint, debitis.
+        <figcaption id="caption" onClick={toggleShow}>
+          {caption}
         </figcaption>
-      </Modal>
+      </div>
+      <CSSTransition
+        in={isShowing}
+        timeout={300}
+        classNames="info"
+        unmountOnExit
+      >
+        <CardInfo>{children}</CardInfo>
+      </CSSTransition>
     </>
   );
 };

@@ -11,8 +11,16 @@ const Apps = () => {
         src={softRiders}
         title="Soft Riders"
         link="http://www.soft-riders.com"
+        caption="A curated playlist hub by host, Miki Lee"
       >
-        A curated playlist hub by host, Miki Lee
+        As a proud owner of my first website Edgar really worked in depth with
+        my vision. He was able to walk me through everything that I needed to
+        know with complete transparency, optimal solutions and most importantly
+        patience. I am extremely psyched to see what he does not only for my
+        website moving forward but for all of his clients. 5 stars
+        <span role="img" aria-label="star emoji">
+          ⭐️⭐️⭐️⭐️⭐️
+        </span>
       </Card>
     </article>
   );
