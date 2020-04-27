@@ -15,9 +15,12 @@ const Card = ({ link, title, src, caption, children }) => {
           <a href={link}>{title}</a>
         </h4>
         <img src={src} alt="" />
-        <figcaption id="caption" onClick={toggleShow}>
-          {caption}
-        </figcaption>
+        <div className={classes.caption}>
+          <figcaption>{caption}</figcaption>
+          <div className={classes.icon} onClick={toggleShow}>
+            <i class="fas fa-info"></i>
+          </div>
+        </div>
       </div>
       <CSSTransition
         in={isShowing}

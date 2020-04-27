@@ -24,12 +24,20 @@
       text-decoration: none;
     }
   }
-  figcaption {
-    margin-top: -4px;
-    padding-top: 4px;
+  .caption {
+    display: flex;
+    justify-content: space-between;
+    margin: -5px;
+    padding: 5px;
     font-weight: bold;
     color: $mainBgColor;
     background-color: $borderBlue;
-    text-align: center;
+    .icon svg {
+      width: 10px;
+      height: 10px;
+      border: 2px solid $mainBgColor;
+      border-radius: 100%;
+      padding: 3px;
+    }
   }
 }
