@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-import Content from "./Components/Content";
 import Header from "./Components/Header";
 import Routes from "./Components/Routes";
 import Navbar from "./Components/Navbar";
@@ -17,12 +16,12 @@ class App extends Component {
 
   render() {
     return (
-      <Content>
+      <>
         <Header />
         <Routes />
         <Navbar darkMode={this.state.isDarkMode} />
         <Footer />
-      </Content>
+      </>
     );
   }
 }

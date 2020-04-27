@@ -18,7 +18,7 @@ const Card = ({ link, title, src, caption, children }) => {
         <div className={classes.caption}>
           <figcaption>{caption}</figcaption>
           <div className={classes.icon} onClick={toggleShow}>
-            <i class="fas fa-info"></i>
+            <i className="fas fa-info"></i>
           </div>
         </div>
       </div>

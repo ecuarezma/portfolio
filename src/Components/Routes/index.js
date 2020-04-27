@@ -3,6 +3,7 @@ import { Route } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
 import useToggleState from "../../hooks/useToggleState";
 
+import Content from "../../Components/Content";
 import Home from "../../Pages/Home";
 import Apps from "../../Pages/Apps";
 import Projects from "../../Pages/Projects";
@@ -31,7 +32,13 @@ const Routes = () => {
               unmountOnExit
             >
               <div className="page">
-                {loading ? <p id="loading">Loading...</p> : <Component />}
+                {loading ? (
+                  <p id="loading">Loading...</p>
+                ) : (
+                  <Content>
+                    <Component />
+                  </Content>
+                )}
               </div>
             </CSSTransition>
           )}
