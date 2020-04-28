@@ -2,17 +2,17 @@ import React from "react";
 import { CSSTransition } from "react-transition-group";
 import useToggleState from "../../hooks/useToggleState";
 
-import Loader from "../../Components/Loader";
+// import Loader from "../../Components/Loader";
 import CardInfo from "./CardInfo";
 import classes from "./Card.module.scss";
 import "./CardInfo/info.css";
 
-const Card = ({ link, title, src, caption, isLoading, children }) => {
+const Card = ({ link, title, src, caption, children }) => {
   const [isShowing, toggleShow] = useToggleState(false);
 
-  if (isLoading) {
-    return <Loader />;
-  }
+  // if (isLoading) {
+  //   return <Loader />;
+  // }
 
   return (
     <>
@@ -20,7 +20,7 @@ const Card = ({ link, title, src, caption, isLoading, children }) => {
         <h4>
           <a href={link}>{title}</a>
         </h4>
-        <img src={src} alt="" />
+        <img src={src} alt="App" />
         <div className={classes.caption}>
           <figcaption>{caption}</figcaption>
           <div className={classes.icon} onClick={toggleShow}>
