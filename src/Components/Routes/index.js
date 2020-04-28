@@ -1,10 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Route } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
-import useToggleState from "../../hooks/useToggleState";
 
 import Content from "../Content";
-import Loader from "../Loader";
 import Home from "../../Pages/Home";
 import Apps from "../../Pages/Apps";
 import Projects from "../../Pages/Projects";
@@ -12,14 +10,11 @@ import Projects from "../../Pages/Projects";
 import "./styles.css";
 
 const Routes = () => {
-  const [loading, toggleLoading] = useToggleState();
   const routes = [
     { path: "/", name: "Home", Component: Home },
     { path: "/apps", name: "Apps", Component: Apps },
     { path: "/projects", name: "Projects", Component: Projects },
   ];
-
-  useEffect(toggleLoading, []);
 
   return (
     <>
@@ -33,13 +28,9 @@ const Routes = () => {
               unmountOnExit
             >
               <div className="page">
-                {loading ? (
-                  <Loader />
-                ) : (
-                  <Content>
-                    <Component />
-                  </Content>
-                )}
+                <Content>
+                  <Component />
+                </Content>
               </div>
             </CSSTransition>
           )}
