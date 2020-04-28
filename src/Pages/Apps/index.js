@@ -1,17 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
+import useToggleState from "../../hooks/useToggleState";
 import Card from "../../Components/Card";
 
 import classes from "./Apps.module.scss";
+import softRidersLowRes from "../../assets/soft-riders-lowRes.jpg";
 import softRiders from "../../assets/soft-riders.png";
 
 const Apps = () => {
+  const [isLoading, toggleLoading] = useToggleState();
+
+  useEffect(toggleLoading, []);
+
   return (
     <article className={classes.Apps}>
       <Card
-        src={softRiders}
+        src={isLoading ? softRidersLowRes : softRiders}
         title="Soft Riders"
         link="http://www.soft-riders.com"
         caption="A curated playlist hub by host, Miki Lee"
+        isLoading={isLoading}
       >
         My first live app for a client featuring API calls to various endpoints
         such as{" "}

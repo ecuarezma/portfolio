@@ -3,7 +3,8 @@ import { Route } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
 import useToggleState from "../../hooks/useToggleState";
 
-import Content from "../../Components/Content";
+import Content from "../Content";
+import Loader from "../Loader";
 import Home from "../../Pages/Home";
 import Apps from "../../Pages/Apps";
 import Projects from "../../Pages/Projects";
@@ -33,7 +34,7 @@ const Routes = () => {
             >
               <div className="page">
                 {loading ? (
-                  <p id="loading">Loading...</p>
+                  <Loader />
                 ) : (
                   <Content>
                     <Component />

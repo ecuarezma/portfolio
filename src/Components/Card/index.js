@@ -1,12 +1,18 @@
 import React from "react";
 import { CSSTransition } from "react-transition-group";
 import useToggleState from "../../hooks/useToggleState";
+
+import Loader from "../../Components/Loader";
 import CardInfo from "./CardInfo";
 import classes from "./Card.module.scss";
 import "./CardInfo/info.css";
 
-const Card = ({ link, title, src, caption, children }) => {
+const Card = ({ link, title, src, caption, isLoading, children }) => {
   const [isShowing, toggleShow] = useToggleState(false);
+
+  if (isLoading) {
+    return <Loader />;
+  }
 
   return (
     <>

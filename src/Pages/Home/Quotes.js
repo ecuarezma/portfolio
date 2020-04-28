@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Loader from "../../Components/Loader";
 
 function Quotes() {
   const [error, setError] = useState(null);
@@ -33,7 +34,7 @@ function Quotes() {
       </blockquote>
     );
   } else if (!isLoaded) {
-    return <div>Loading...</div>;
+    return <Loader />;
   } else {
     return (
       <blockquote style={{ margin: 0 }}>

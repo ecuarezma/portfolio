@@ -1,6 +1,9 @@
 @import "../../Pages/Styles/colors";
 
 .Content {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1.1rem;
