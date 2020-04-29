@@ -10,13 +10,15 @@ const Header = (props) => {
   };
 
   return (
-    <header className={classes.Header}>
-      <div className={classes.title} onClick={handleClick}>
-        <h1>Edgar Cuarezma</h1>
-        <h3>Full Stack Developer</h3>
-      </div>
+    <>
+      <header className={classes.Header}>
+        <div className={classes.title} onClick={handleClick}>
+          <h1>Edgar Cuarezma</h1>
+          <h3>Full Stack Developer</h3>
+        </div>
+      </header>
       <Particles className={classes.polygon} params={config} />
-    </header>
+    </>
   );
 };
 
