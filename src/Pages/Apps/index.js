@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import useToggleState from "../../hooks/useToggleState";
 import Card from "../../Components/Card";
 
@@ -8,13 +8,17 @@ import softRiders from "../../assets/soft-riders.png";
 
 const Apps = () => {
   const [isLoading, toggleLoading] = useToggleState();
+  const [preLoadImage, setImage] = useState(softRidersLowRes);
 
   useEffect(toggleLoading, []);
+  useEffect(() => {
+    setImage(softRiders);
+  }, []);
 
   return (
     <article className={classes.Apps}>
       <Card
-        src={isLoading ? softRidersLowRes : softRiders}
+        src={preLoadImage}
         title="Soft Riders"
         link="http://www.soft-riders.com"
         caption="A curated playlist hub by host, Miki Lee"
