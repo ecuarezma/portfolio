@@ -1,6 +1,9 @@
 .Home {
   margin: 45px 0;
   margin-bottom: 100px;
+  @media (min-width: 600px) {
+    margin: 0;
+  }
 
   .profile {
     margin: 1rem;
