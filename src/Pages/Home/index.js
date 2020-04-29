@@ -1,24 +1,25 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Skills from "./Skills";
 import Quotes from "./Quotes";
 
-import useToggleState from "../../hooks/useToggleState";
 import classes from "./Home.module.scss";
 import profile from "../../assets/profile.jpg";
 import profileLowRes from "../../assets/profile-lowRes.jpg";
 
 const Home = () => {
-  const [loading, toggleLoading] = useToggleState();
+  const [preLoadImage, setImage] = useState(profileLowRes);
 
-  useEffect(toggleLoading, []);
+  useEffect(() => {
+    setImage(profile);
+  }, []);
 
   return (
     <div className={classes.Home}>
       <div className={classes.profile}>
         <img
           className={classes.profileImage}
-          src={loading ? profileLowRes : profile}
-          alt="profile"
+          src={preLoadImage}
+          alt={profileLowRes}
         />
       </div>
 

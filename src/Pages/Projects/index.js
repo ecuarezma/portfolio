@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import useToggleState from "../../hooks/useToggleState";
 
 import Card from "../../Components/Card";
@@ -11,13 +11,23 @@ import classes from "./Projects.module.scss";
 
 const Projects = () => {
   const [isLoading, toggleLoading] = useToggleState();
+  const [isImage, setImage] = useState({
+    entrante: { preLoadImage: entranteLowRes },
+    colorApp: { preLoadImage: colorAppLowRes },
+  });
 
   useEffect(toggleLoading, []);
+  useEffect(() => {
+    setImage({
+      entrante: { preLoadImage: entrante },
+      colorApp: { preLoadImage: colorApp },
+    });
+  }, []);
 
   return (
     <article className={classes.Projects}>
       <Card
-        src={isLoading ? colorAppLowRes : colorApp}
+        src={isImage.colorApp.preLoadImage}
         title="Color App"
         link="https://color-app-dbac8.firebaseapp.com/"
         caption="Create a custom palette!"
@@ -29,7 +39,7 @@ const Projects = () => {
         packages.
       </Card>
       <Card
-        src={isLoading ? entranteLowRes : entrante}
+        src={isImage.entrante.preLoadImage}
         title="Entrante"
         link="https://entrante-next.now.sh/"
         caption="Online showcase of artist's work."
