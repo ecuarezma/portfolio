@@ -20,7 +20,9 @@ const Card = ({ link, title, src, caption, isLoading, children }) => {
         <h4>
           <a href={link}>{title}</a>
         </h4>
-        <img src={src} alt="App" />
+        <div className={classes.image}>
+          <img src={src} alt="App" />
+        </div>
         <div className={classes.caption}>
           <figcaption>{caption}</figcaption>
           <div className={classes.icon} onClick={toggleShow}>

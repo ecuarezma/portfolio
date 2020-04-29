@@ -5,10 +5,14 @@
   border: 10px solid;
   border-image: linear-gradient(rgba(0, 0, 0, 0) 25%, $borderBlue) 5;
 
-  img {
+  .image {
+    min-height: 200px;
     border: 2px solid $textColor;
-    width: 100%;
     box-sizing: border-box;
+    img {
+      width: 100%;
+      vertical-align: middle;
+    }
   }
   h4 {
     margin: 0;
@@ -27,8 +31,8 @@
   .caption {
     display: flex;
     justify-content: space-between;
-    margin: -5px;
-    padding: 5px;
+    align-items: center;
+    padding-top: 5px;
     font-weight: bold;
     color: $mainBgColor;
     background-color: $borderBlue;
