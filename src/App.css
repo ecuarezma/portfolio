@@ -17,3 +17,9 @@ body {
     #fdf5e6 9px
   );
 }
+
+@media (min-width: 600px) {
+  body {
+    background: linear-gradient(90deg, #efefef 40%, #ffe9d1 70%);
+  }
+}
