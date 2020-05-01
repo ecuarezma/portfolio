@@ -6,9 +6,11 @@ const Footer = () => {
     <footer className={classes.Footer}>
       <div className={classes.polygon} />
       <div className={classes.icons}>
-        <a href="mailto: ecuarezma@gmail.com">
-          <i className="far fa-envelope" />
-        </a>
+        <div className={classes.contact}>
+          <a href="mailto: ecuarezma@gmail.com">
+            <i className="far fa-envelope" />
+          </a>
+        </div>
         <div className={classes.verticalIcons}>
           <a href="https://www.linkedin.com/in/cuarezma/">
             <i className="fab fa-linkedin" />

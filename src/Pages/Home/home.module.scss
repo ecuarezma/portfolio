@@ -4,9 +4,14 @@
   margin: 45px 0;
   margin-bottom: 100px;
   @media (min-width: 600px) {
-    margin: 0 20%;
+    margin: 0 5%;
   }
-
+  @media (min-width: 900px) {
+    margin: 0 10%;
+  }
+  @media (min-width: 1100px) {
+    margin: 0 15%;
+  }
   .profile {
     margin: 1rem;
     clip-path: polygon(100% 0, 100% 85%, 50% 95%, 0 85%, 0 0);

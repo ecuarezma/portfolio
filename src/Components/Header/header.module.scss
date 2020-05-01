@@ -10,13 +10,20 @@
   }
 
   .title {
-    margin-top: 20px;
+    margin-top: 1rem;
     font-family: "Fira Sans", sans-serif;
     color: rgb(164, 164, 164);
     z-index: 200;
     cursor: pointer;
     @media (min-width: 600px) {
       width: 60%;
+      margin: 0.5rem 0;
+      h1 {
+        font-size: 2.5rem;
+      }
+      h3 {
+        font-size: 1.5rem;
+      }
     }
     h1,
     h3 {

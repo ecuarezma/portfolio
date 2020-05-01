@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 import classes from "./Link.module.scss";
 
-const Link = props => {
+const Link = (props) => {
   return (
     <div className={classes.Link}>
       <NavLink
