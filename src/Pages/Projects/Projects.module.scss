@@ -1,3 +1,8 @@
 .Projects {
   margin: 150px 0;
+  @media (min-width: 600px) {
+    position: relative;
+    top: 50px;
+    margin: 2rem auto;
+  }
 }

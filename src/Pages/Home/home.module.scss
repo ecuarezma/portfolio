@@ -1,8 +1,10 @@
+@import "../../Pages/Styles/colors";
+
 .Home {
   margin: 45px 0;
   margin-bottom: 100px;
   @media (min-width: 600px) {
-    margin: 0;
+    margin: 0 20%;
   }
 
   .profile {
@@ -17,13 +19,13 @@
     display: flex;
     margin: -1rem 1rem 1rem 1rem;
     div {
-      margin: 0 -2.5px;
+      margin: 0;
       padding: 0;
+      border-bottom: 2px solid #8c7a7a;
       width: 100%;
-      border-top: 2px solid rgba(17, 10, 10, 0.6);
-      transform: rotate(15deg);
+      transform: rotate(15deg) translateX(4px);
       &:last-child {
-        transform: rotate(-15deg);
+        transform: rotate(-15deg) translateX(-4px);
       }
     }
   }
