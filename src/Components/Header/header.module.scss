@@ -28,6 +28,17 @@
         font-size: 1.5rem;
       }
     }
+    @media (max-height: 600px) and (min-width: 600px) {
+      margin: 0;
+      h1 {
+        letter-spacing: 0.2rem;
+        font-size: 2rem;
+      }
+      h3 {
+        letter-spacing: 0.2rem;
+        font-size: 1.2rem;
+      }
+    }
     h1,
     h3 {
       text-align: center;
@@ -51,5 +62,8 @@
   @media (min-width: 600px) {
     height: 120px;
     clip-path: none;
+  }
+  @media (max-height: 600px) and (min-width: 600px) {
+    height: 75px;
   }
 }
