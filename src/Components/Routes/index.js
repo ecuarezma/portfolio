@@ -14,30 +14,27 @@ const Routes = () => {
     { path: "/", name: "Home", Component: Home },
     { path: "/apps", name: "Apps", Component: Apps },
     { path: "/projects", name: "Projects", Component: Projects },
+    { path: "*", name: "Redirect", Component: Home },
   ];
 
-  return (
-    <>
-      {routes.map(({ path, Component }) => (
-        <Route key={path} exact path={path}>
-          {({ match }) => (
-            <CSSTransition
-              in={match != null}
-              timeout={300}
-              classNames="page"
-              unmountOnExit
-            >
-              <div className="page">
-                <Content>
-                  <Component />
-                </Content>
-              </div>
-            </CSSTransition>
-          )}
-        </Route>
-      ))}
-    </>
-  );
+  return routes.map(({ path, Component }) => (
+    <Route key={path} exact path={path}>
+      {({ match }) => (
+        <CSSTransition
+          in={match != null}
+          timeout={300}
+          classNames="page"
+          unmountOnExit
+        >
+          <div className="page">
+            <Content>
+              <Component />
+            </Content>
+          </div>
+        </CSSTransition>
+      )}
+    </Route>
+  ));
 };
 
 export default Routes;

@@ -18,7 +18,9 @@ const Card = ({ link, title, src, caption, isLoading, children }) => {
     <>
       <div className={classes.Card}>
         <h4>
-          <a href={link}>{title}</a>
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            {title}
+          </a>
         </h4>
         <div className={classes.image}>
           <img src={src} alt="App" />

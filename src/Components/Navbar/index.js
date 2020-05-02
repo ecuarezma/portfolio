@@ -10,7 +10,11 @@ const Navbar = (props) => {
       <Link>Projects</Link>
       {/* <Link>CV</Link> */}
       <div className={style.Link}>
-        <a href="https://docs.google.com/document/d/1RNRpD5Chat60MCSoF-Zs4XBJlnsfKJQtssRcwpdmWmA/edit?usp=sharing">
+        <a
+          href="https://docs.google.com/document/d/1RNRpD5Chat60MCSoF-Zs4XBJlnsfKJQtssRcwpdmWmA/edit?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           CV
         </a>
       </div>
