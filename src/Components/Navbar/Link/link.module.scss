@@ -51,7 +51,11 @@
       margin-left: auto;
     }
   }
-  @media (max-height: 700px) and (min-width: 1000px) {
+  @media (max-height: 750px) and (min-width: 1000px) {
+    width: 200px;
+    height: 200px;
+  }
+  @media (max-height: 640px) and (min-width: 1000px) {
     width: 180px;
     height: 180px;
   }
