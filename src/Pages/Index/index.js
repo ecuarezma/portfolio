@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Skills from "./Skills";
 import Quotes from "./Quotes";
 
-import classes from "./Home.module.scss";
+import * as classes from "./Home.module.scss";
 import profile from "../../assets/profile.jpg";
 import profileLowRes from "../../assets/profile-lowRes.jpg";
 

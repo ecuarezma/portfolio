@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import useToggleState from "../../hooks/useToggleState";
-import Card from "../../Components/Card";
+import Card from "../../components/Card";
 
 import classes from "./Apps.module.scss";
 import softRidersLowRes from "../../assets/soft-riders-lowRes.jpg";

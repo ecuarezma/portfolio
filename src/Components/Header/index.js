@@ -1,6 +1,5 @@
 import React from "react";
-import { withRouter } from "react-router-dom";
-import Particles from "react-particles-js";
+import Particles from "react-tsparticles";
 import config from "./particles";
 import classes from "./Header.module.scss";
 
@@ -22,4 +21,4 @@ const Header = (props) => {
   );
 };
 
-export default withRouter(Header);
+export default Header;
