@@ -121,11 +121,7 @@ const StyledLink = styled.div`
 const NavLink = (props) => {
   return (
     <StyledLink>
-      <Link
-        exact
-        to={`/${props.children.toLowerCase()}`}
-        activeClassName="active"
-      >
+      <Link exact to={`/${props.children}`} activeClassName="active">
         {props.children}
       </Link>
     </StyledLink>

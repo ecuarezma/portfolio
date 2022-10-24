@@ -147,8 +147,8 @@ const Navbar = () => {
     <StyledNavbar>
       <NavLink>Apps</NavLink>
       <NavLink>Projects</NavLink>
-      {/* <Link>CV</Link> */}
-      <StyledLink>
+      <NavLink>CV</NavLink>
+      {/* <StyledLink>
         <a
           href="https://docs.google.com/document/d/1RNRpD5Chat60MCSoF-Zs4XBJlnsfKJQtssRcwpdmWmA/edit?usp=sharing"
           target="_blank"
@@ -156,7 +156,7 @@ const Navbar = () => {
         >
           CV
         </a>
-      </StyledLink>
+      </StyledLink> */}
       {/* <Link>Blog</Link> */}
     </StyledNavbar>
   );

@@ -48,7 +48,7 @@ const config = {
         default: "bounce",
       },
       random: false,
-      speed: 0.25,
+      speed: 0.5,
       straight: false,
     },
     number: {

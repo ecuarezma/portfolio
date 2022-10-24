@@ -1,18 +1,30 @@
 import React from "react";
-
+import Layout from "../components/Layout";
+import resume from "../assets/resume.jpg";
 import styled from "styled-components";
 
 const StyledWrapper = styled.div`
-  position: relative;
-  z-index: 1000;
+  header,
+  #tsparticles {
+    display: none;
+  }
+  img {
+    width: 100%;
+  }
+  @media (min-width: 600px) {
+    img {
+      width: 75%;
+      margin: 5rem;
+    }
+  }
 `;
 
 const CV = () => {
   return (
     <StyledWrapper>
-      <a href="https://docs.google.com/document/d/1RNRpD5Chat60MCSoF-Zs4XBJlnsfKJQtssRcwpdmWmA/edit?usp=sharing">
-        cv is here
-      </a>
+      <Layout>
+        <img src={resume} alt="resume" />
+      </Layout>
     </StyledWrapper>
   );
 };

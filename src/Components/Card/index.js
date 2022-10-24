@@ -1,10 +1,12 @@
 import React from "react";
 import useToggleState from "../../hooks/useToggleState";
 import { CSSTransition } from "react-transition-group";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInfo } from "@fortawesome/free-solid-svg-icons";
 
 import Loader from "../../components/Loader";
 import styled from "styled-components";
-// import CardInfo from "./CardInfo";
+import CardInfo from "./CardInfo";
 // import classes from "./Card.module.scss";
 import "./CardInfo/info.css";
 
@@ -55,7 +57,8 @@ const StyledWrapper = styled.div`
   h4 {
     margin: 0;
     margin-left: auto;
-    background-color: rgba(${({ theme }) => theme.colors.orange}, 0.8);
+    background-color: ${({ theme }) => theme.colors.orange};
+    opacity: 0.8;
     width: 40%;
     padding: 5px;
     text-align: center;
@@ -105,7 +108,7 @@ const Card = ({ link, title, src, caption, isLoading, children }) => {
         <div className="caption">
           <figcaption>{caption}</figcaption>
           <div className="icon" onClick={toggleShow}>
-            <i className="fas fa-info"></i>
+            <FontAwesomeIcon icon={faInfo} />
           </div>
         </div>
 
