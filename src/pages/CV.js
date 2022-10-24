@@ -1,14 +1,19 @@
 import React from "react";
 
-import classes from "./CV.module.scss";
+import styled from "styled-components";
+
+const StyledWrapper = styled.div`
+  position: relative;
+  z-index: 1000;
+`;
 
 const CV = () => {
   return (
-    <div className={classes.CV}>
+    <StyledWrapper>
       <a href="https://docs.google.com/document/d/1RNRpD5Chat60MCSoF-Zs4XBJlnsfKJQtssRcwpdmWmA/edit?usp=sharing">
         cv is here
       </a>
-    </div>
+    </StyledWrapper>
   );
 };
 

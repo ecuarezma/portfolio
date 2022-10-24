@@ -1,12 +1,18 @@
 import React from "react";
-import classes from "./Loader.module.scss";
+import styled from "styled-components";
 
-function Loader() {
-  return (
-    <div className={classes.Loader}>
-      <p>Loading...</p>
-    </div>
-  );
-}
+const StyledWrapper = styled.div`
+  margin: 0 auto;
+  font-size: 1.5rem;
+  p {
+    color: ${({ theme }) => theme.colors.blue};
+  }
+`;
+
+const Loader = () => (
+  <StyledWrapper>
+    <p>Loading...</p>
+  </StyledWrapper>
+);
 
 export default Loader;

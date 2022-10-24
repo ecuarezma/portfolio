@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Loader from "../../Components/Loader";
 
 function Quotes() {
   const styles = { margin: "0 auto" };
@@ -36,8 +35,6 @@ function Quotes() {
         </blockquote>
       </div>
     );
-  } else if (!isLoaded) {
-    return <Loader />;
   } else {
     return (
       <div style={styles}>

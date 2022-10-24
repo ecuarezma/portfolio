@@ -1,6 +1,13 @@
-@import "../../styles/colors";
+import React, { useState, useEffect } from "react";
+import Skills from "../components/Main/Skills";
+import Quotes from "../components/Main/Quotes";
+import Layout from "../components/Layout";
 
-.Home {
+import profile from "../assets/profile.jpg";
+import profileLowRes from "../assets/profile-lowRes.jpg";
+import styled from "styled-components";
+
+const StyledWrapper = styled.div`
   margin: 45px 0;
   margin-bottom: 100px;
   @media (min-width: 600px) {
@@ -15,7 +22,7 @@
   .profile {
     margin: 1rem;
     clip-path: polygon(100% 0, 100% 85%, 50% 95%, 0 85%, 0 0);
-    .profileImage {
+    .profile-image {
       width: 100%;
     }
     @media (min-width: 1200px) {
@@ -80,4 +87,53 @@
     border: 0;
     border-bottom: 2px dashed rgba(17, 10, 10, 0.6);
   }
-}
+`;
+
+const Home = () => {
+  const [preLoadImage, setImage] = useState(profileLowRes);
+
+  useEffect(() => {
+    setImage(profile);
+  }, []);
+
+  return (
+    <Layout>
+      <StyledWrapper>
+        <div className="profile">
+          <img
+            className="profile-image"
+            src={preLoadImage}
+            alt={profileLowRes}
+          />
+        </div>
+
+        <div className="chevronDown">
+          <div id="left" />
+          <div id="right" />
+        </div>
+
+        <article className="content">
+          <div className="quotes">
+            <Quotes />
+          </div>
+          <Skills />
+          <hr />
+          <p>
+            I use all the tools available to me to create modern, simplistic and
+            effective apps.
+            <br />
+            <br />
+            Full-time parent, baker, artist, and programmer.
+            <br />
+            <br />
+            <strong>
+              <span>I would love to work with you on your next project!</span>
+            </strong>
+          </p>
+        </article>
+      </StyledWrapper>
+    </Layout>
+  );
+};
+
+export default Home;

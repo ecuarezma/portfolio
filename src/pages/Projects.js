@@ -1,13 +1,22 @@
 import React, { useState, useEffect } from "react";
-import useToggleState from "../../hooks/useToggleState";
+import useToggleState from "../hooks/useToggleState";
 
-import Card from "../../Components/Card";
-import colorApp from "../../assets/colorApp.png";
-import colorAppLowRes from "../../assets/colorApp-lowRes.jpg";
-import entrante from "../../assets/entrante.png";
-import entranteLowRes from "../../assets/entrante-lowRes.jpg";
+import Card from "../components/Card";
+import colorApp from "../assets/colorApp.png";
+import colorAppLowRes from "../assets/colorApp-lowRes.jpg";
+import entrante from "../assets/entrante.png";
+import entranteLowRes from "../assets/entrante-lowRes.jpg";
 
-import classes from "./Projects.module.scss";
+import styled from "styled-components";
+
+const StyledWrapper = styled.article`
+  margin: 150px 0;
+  @media (min-width: 600px) {
+    position: relative;
+    top: 50px;
+    margin: 2rem auto;
+  }
+`;
 
 const Projects = () => {
   const [isLoading, toggleLoading] = useToggleState();
@@ -25,7 +34,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <article className={classes.Projects}>
+    <StyledWrapper>
       <Card
         src={isImage.colorApp.preLoadImage}
         title="Color App"
@@ -50,7 +59,7 @@ const Projects = () => {
         what I have learned. This iteration uses Next.js with React, a far cry
         from its origins in Dreamweaver...
       </Card>
-    </article>
+    </StyledWrapper>
   );
 };
 

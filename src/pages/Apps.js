@@ -1,10 +1,20 @@
 import React, { useState, useEffect } from "react";
-import useToggleState from "../../hooks/useToggleState";
-import Card from "../../components/Card";
+import useToggleState from "../hooks/useToggleState";
+import Card from "../components/Card";
 
-import classes from "./Apps.module.scss";
-import softRidersLowRes from "../../assets/soft-riders-lowRes.jpg";
-import softRiders from "../../assets/soft-riders.png";
+import softRidersLowRes from "../assets/soft-riders-lowRes.jpg";
+import softRiders from "../assets/soft-riders.png";
+
+import styled from "styled-components";
+
+const StyledWrapper = styled.article`
+  margin: 180px 0;
+  @media (min-width: 600px) {
+    position: relative;
+    top: 50px;
+    margin: 2rem auto;
+  }
+`;
 
 const Apps = () => {
   const [isLoading, toggleLoading] = useToggleState();
@@ -16,7 +26,7 @@ const Apps = () => {
   }, []);
 
   return (
-    <article className={classes.Apps}>
+    <StyledWrapper>
       <Card
         src={preLoadImage}
         title="Soft Riders"
@@ -50,7 +60,7 @@ const Apps = () => {
           <cite>- Miki Lee</cite>
         </blockquote>
       </Card>
-    </article>
+    </StyledWrapper>
   );
 };
 
