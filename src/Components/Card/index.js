@@ -7,7 +7,6 @@ import { faInfo } from "@fortawesome/free-solid-svg-icons";
 import Loader from "../../components/Loader";
 import styled from "styled-components";
 import CardInfo from "./CardInfo";
-// import classes from "./Card.module.scss";
 import "./CardInfo/info.css";
 
 const StyledWrapper = styled.div`

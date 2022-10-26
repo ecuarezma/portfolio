@@ -27,7 +27,7 @@ const StyledNavbar = styled.nav`
 `;
 
 const StyledLink = styled.div`
-  @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap");
+  /* @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap"); */
   width: 100%;
   padding: 2px;
   background-color: ${({ theme }) => theme.colors.orange};
