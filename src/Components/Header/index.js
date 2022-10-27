@@ -1,5 +1,7 @@
 import React from "react";
 import ParticlesComponent from "../Particles";
+import { Link } from "gatsby";
+import "@fontsource/raleway";
 import styled from "styled-components";
 
 const StyledWrapper = styled.header`
@@ -17,9 +19,10 @@ const StyledWrapper = styled.header`
 
   .title {
     margin-top: 1rem;
-    font-family: "Fira Sans", sans-serif;
+    font-family: "Raleway", sans-serif;
     color: rgb(164, 164, 164);
     z-index: 200;
+    text-decoration: none;
     cursor: pointer;
     @media (min-width: 600px) {
       margin: 1rem 0;
@@ -55,22 +58,16 @@ const StyledWrapper = styled.header`
   }
 `;
 
-const Header = (props) => {
-  const handleClick = () => {
-    props.history.push("/");
-  };
-
-  return (
-    <>
-      <StyledWrapper>
-        <div className="title" onClick={handleClick}>
-          <h1>Edgar Cuarezma</h1>
-          <h3>Full Stack Developer</h3>
-        </div>
-      </StyledWrapper>
-      <ParticlesComponent />
-    </>
-  );
-};
+const Header = () => (
+  <>
+    <StyledWrapper>
+      <Link to="/" className="title">
+        <h1>Edgar Cuarezma</h1>
+        <h3>Full Stack Developer</h3>
+      </Link>
+    </StyledWrapper>
+    <ParticlesComponent />
+  </>
+);
 
 export default Header;

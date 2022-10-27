@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
+import "@fontsource/roboto";
+import "@fontsource/comfortaa";
 import styled from "styled-components";
 
 const StyledLink = styled.div`
@@ -121,7 +123,7 @@ const StyledLink = styled.div`
 const NavLink = (props) => {
   return (
     <StyledLink>
-      <Link exact to={`/${props.children}`} activeClassName="active">
+      <Link to={`/${props.children}`} activeClassName="active">
         {props.children}
       </Link>
     </StyledLink>
