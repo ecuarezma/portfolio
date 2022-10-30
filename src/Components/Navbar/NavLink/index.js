@@ -95,7 +95,7 @@ const StyledLink = styled.div`
       padding: 0;
       width: 80%;
       height: 80%;
-      font-family: "Comfortaa", cursive;
+      font-family: "Comfortaa", sans-serif;
       font-size: 2rem;
       font-weight: 700;
       clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);

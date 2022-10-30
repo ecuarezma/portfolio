@@ -39,6 +39,12 @@ const StyledWrapper = styled.footer`
     align-items: flex-end;
     bottom: 80px;
     font-size: 1.7rem;
+    svg {
+      transition: ease-in 100ms;
+    }
+    svg:hover {
+      color: ${({ theme }) => theme.colors.orange};
+    }
     @media (min-width: 600px) {
       bottom: 0;
       height: 100%;
@@ -49,20 +55,22 @@ const StyledWrapper = styled.footer`
       .contact {
         display: flex;
         align-items: center;
+        a {
+          font-size: 1.5rem;
+        }
       }
       .contact::after {
-        content: "to : ecuarezma@gmail.com";
+        content: "ecuarezma@gmail.com";
         color: ${({ theme }) => theme.colors.mainBgColor};
-        font-size: 1.8rem;
+        font-size: 1.5rem;
       }
     }
     @media (max-height: 600px) and (min-width: 1000px) {
       align-items: flex-end;
-      font-size: 2.5rem;
-      .contact::after {
+      /* .contact::after {
         font-size: 1.5rem;
         padding-left: 0.5rem;
-      }
+      } */
     }
     @media (max-height: 750px) and (min-width: 1000px) {
       align-items: flex-end;

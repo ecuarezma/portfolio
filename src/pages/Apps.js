@@ -8,7 +8,7 @@ import softRiders from "../assets/soft-riders.png";
 
 import styled from "styled-components";
 
-const StyledWrapper = styled.article`
+const StyledWrapper = styled.section`
   margin: 180px 0;
   @media (min-width: 600px) {
     position: relative;

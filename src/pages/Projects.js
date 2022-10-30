@@ -10,7 +10,7 @@ import entranteLowRes from "../assets/entrante-lowRes.jpg";
 
 import styled from "styled-components";
 
-const StyledWrapper = styled.article`
+const StyledWrapper = styled.section`
   margin: 150px 0;
   @media (min-width: 600px) {
     position: relative;

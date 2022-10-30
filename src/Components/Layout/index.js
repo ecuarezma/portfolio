@@ -2,8 +2,8 @@ import React from "react";
 
 import Header from "../Header";
 import Navbar from "../Navbar";
-import Footer from "../Footer";
 import { ThemeProvider } from "styled-components";
+import styled from "styled-components";
 import "../styles/global.css";
 
 const theme = {
@@ -17,13 +17,26 @@ const theme = {
   },
 };
 
+const StyledWrapper = styled.main`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  @media (min-width: 600px) {
+    section {
+      width: 60%;
+      align-self: flex-end;
+    }
+  }
+`;
+
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
     <>
       <Header />
       <Navbar />
-      {children}
-      <Footer />
+      <StyledWrapper>{children}</StyledWrapper>
     </>
   </ThemeProvider>
 );

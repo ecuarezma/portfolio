@@ -11,20 +11,23 @@ const StyledWrapper = styled.header`
   justify-content: center;
   width: 100%;
   z-index: 200;
-  @media (min-width: 1200px) {
-    justify-content: center;
-    right: 0;
-    width: 60%;
-  }
 
   .title {
     margin-top: 1rem;
     font-family: "Raleway", sans-serif;
-    color: rgb(164, 164, 164);
-    z-index: 200;
+    color: rgb(253, 245, 230);
+    z-index: 1000;
     text-decoration: none;
     cursor: pointer;
+    span {
+      display: none;
+    }
     @media (min-width: 600px) {
+      h1,
+      h3,
+      span {
+        display: inline;
+      }
       margin: 1rem 0;
       h1 {
         letter-spacing: 0.2rem;
@@ -33,6 +36,11 @@ const StyledWrapper = styled.header`
       h3 {
         letter-spacing: 0.2rem;
         font-size: 1.5rem;
+      }
+      span {
+        margin: 0.5rem;
+        font-size: 3rem;
+        opacity: 0.5;
       }
     }
     @media (max-height: 600px) and (min-width: 600px) {
@@ -63,6 +71,7 @@ const Header = () => (
     <StyledWrapper>
       <Link to="/" className="title">
         <h1>Edgar Cuarezma</h1>
+        <span>|</span>
         <h3>Full Stack Developer</h3>
       </Link>
     </StyledWrapper>

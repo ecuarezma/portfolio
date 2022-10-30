@@ -7,33 +7,10 @@ import profile from "../assets/profile.jpg";
 import profileLowRes from "../assets/profile-lowRes.jpg";
 import styled from "styled-components";
 
-const StyledWrapper = styled.main`
+const StyledWrapper = styled.section`
   margin: 45px 0;
   margin-bottom: 100px;
-  @media (min-width: 600px) {
-    display: flex;
-    flex-direction: column;
-    align-content: flex-end;
-    width: 50%;
-    margin: 0 5%;
-    margin-left: auto;
-  }
-  @media (min-width: 900px) {
-    display: flex;
-    flex-direction: column;
-    align-content: flex-end;
-    width: 50%;
-    margin: 0 10%;
-    margin-left: auto;
-  }
-  @media (min-width: 1200px) {
-    display: flex;
-    flex-direction: column;
-    align-content: flex-end;
-    width: 50%;
-    margin: 0 15%;
-    margin-left: auto;
-  }
+
   .profile {
     margin: 1rem;
     clip-path: polygon(100% 0, 100% 85%, 50% 95%, 0 85%, 0 0);
