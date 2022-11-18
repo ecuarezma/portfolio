@@ -5,12 +5,12 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
   ],
-  // plugins: [
-  //   {
-  //     resolve: 'gatsby-plugin-manifest',
-  //     options: {
-  //       icon: 'src/assets/images/icon.png',
-  //     },
-  //   },
-  // ],
+  plugins: [
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: "src/assets/mage.png",
+      },
+    },
+  ],
 };
