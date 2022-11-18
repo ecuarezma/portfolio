@@ -82,6 +82,9 @@ const StyledWrapper = styled.div`
       border: 2px solid ${({ theme }) => theme.colors.mainBgColor};
       border-radius: 100%;
       padding: 3px;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 `;
