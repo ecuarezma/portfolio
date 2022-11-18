@@ -10,6 +10,7 @@ import styled from "styled-components";
 const StyledWrapper = styled.section`
   margin: 45px 0;
   margin-bottom: 100px;
+  z-index: -1000;
 
   .profile {
     margin: 1rem;
@@ -19,6 +20,7 @@ const StyledWrapper = styled.section`
     }
     @media (min-width: 1200px) {
       margin: 1rem 10%;
+      z-index: -100;
     }
   }
 
