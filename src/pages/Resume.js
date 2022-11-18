@@ -17,7 +17,7 @@ const StyledWrapper = styled.section`
   }
 `;
 
-const CV = () => {
+const Resume = () => {
   return (
     <Layout>
       <StyledWrapper>
@@ -27,4 +27,5 @@ const CV = () => {
   );
 };
 
-export default CV;
+export default Resume;
+export const Head = () => <title>Edgar Cuarezma | Resume</title>;

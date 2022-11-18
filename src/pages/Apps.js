@@ -68,3 +68,4 @@ const Apps = () => {
 };
 
 export default Apps;
+export const Head = () => <title>Edgar Cuarezma | Apps</title>;

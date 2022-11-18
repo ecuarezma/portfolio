@@ -129,3 +129,4 @@ const Home = () => {
 };
 
 export default Home;
+export const Head = () => <title>Edgar Cuarezma | Home</title>;

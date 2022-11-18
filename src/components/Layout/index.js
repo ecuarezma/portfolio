@@ -5,7 +5,6 @@ import Navbar from "../Navbar";
 import Content from "../Content";
 import { ThemeProvider } from "styled-components";
 import Footer from "../Footer";
-import styled from "styled-components";
 import "../styles/global.css";
 
 const theme = {

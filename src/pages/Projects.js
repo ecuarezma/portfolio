@@ -67,3 +67,4 @@ const Projects = () => {
 };
 
 export default Projects;
+export const Head = () => <title>Edgar Cuarezma | Projects</title>;

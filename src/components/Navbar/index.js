@@ -31,17 +31,7 @@ const Navbar = () => {
     <StyledNavbar>
       <NavLink>Apps</NavLink>
       <NavLink>Projects</NavLink>
-      <NavLink>CV</NavLink>
-      {/* <StyledLink>
-        <a
-          href="https://docs.google.com/document/d/1RNRpD5Chat60MCSoF-Zs4XBJlnsfKJQtssRcwpdmWmA/edit?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          CV
-        </a>
-      </StyledLink> */}
-      {/* <Link>Blog</Link> */}
+      <NavLink>Resume</NavLink>
     </StyledNavbar>
   );
 };
