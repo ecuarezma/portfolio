@@ -12,10 +12,10 @@ const StyledWrapper = styled.header`
   width: 100%;
   z-index: 200;
 
-  .title {
-    margin-top: 1rem;
+  .header {
     font-family: "Raleway", sans-serif;
     color: rgb(253, 245, 230);
+    height: 150px;
     z-index: 1000;
     text-decoration: none;
     cursor: pointer;
@@ -69,7 +69,7 @@ const StyledWrapper = styled.header`
 const Header = () => (
   <>
     <StyledWrapper>
-      <Link to="/" className="title">
+      <Link to="/" className="header">
         <h1>Edgar Cuarezma</h1>
         <span>|</span>
         <h3>Full Stack Developer</h3>
