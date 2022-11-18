@@ -112,10 +112,18 @@ const Footer = () => {
           </a>
         </div>
         <div className="vertical-icons">
-          <a href="https://www.linkedin.com/in/cuarezma/">
+          <a
+            href="https://www.linkedin.com/in/cuarezma/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
-          <a href="https://github.com/ecuarezma">
+          <a
+            href="https://github.com/ecuarezma"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </div>
