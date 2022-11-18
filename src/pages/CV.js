@@ -12,7 +12,8 @@ const StyledWrapper = styled.section`
     width: 100%;
   }
   @media (min-width: 600px) {
-    margin: 4rem 2rem 2rem 0;
+    margin: 6rem 2rem 0 0;
+    padding: 0;
   }
 `;
 
