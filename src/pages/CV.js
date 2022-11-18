@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "../components/Layout";
-import Footer from "../components/Footer";
 import resume from "../assets/resume.png";
 import styled from "styled-components";
 
@@ -33,7 +32,6 @@ const CV = () => {
       <StyledWrapper>
         <img src={resume} alt="resume" />
       </StyledWrapper>
-      <Footer />
     </Layout>
   );
 };
