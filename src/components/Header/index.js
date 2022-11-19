@@ -10,13 +10,12 @@ const StyledWrapper = styled.header`
   display: flex;
   justify-content: center;
   width: 100%;
-  z-index: 200;
+  z-index: 1000;
 
   .header {
     font-family: "Raleway", sans-serif;
     color: rgb(253, 245, 230);
-    height: 150px;
-    z-index: 1000;
+    text-align: center;
     text-decoration: none;
     cursor: pointer;
     span {

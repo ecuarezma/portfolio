@@ -4,9 +4,9 @@ import { CSSTransition } from "react-transition-group";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInfo } from "@fortawesome/free-solid-svg-icons";
 
+import CardInfo from "./CardInfo";
 import Loader from "../../components/Loader";
 import styled from "styled-components";
-import CardInfo from "./CardInfo";
 import "./CardInfo/info.css";
 
 const StyledWrapper = styled.div`

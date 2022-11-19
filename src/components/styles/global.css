@@ -28,7 +28,3 @@ body {
     background: linear-gradient(90deg, #efefef 40%, #ffe9d1 70%);
   }
 }
-#gatsby-focus-wrapper {
-  width: 100vw;
-  height: 100vh;
-}
