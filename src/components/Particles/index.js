@@ -10,8 +10,7 @@ const StyledWrapper = styled.div`
   height: 150px;
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 40%, 0% 100%);
-  /* z-index: 100; */
-  z-index: 0;
+  z-index: 100;
   @media (min-width: 600px) {
     height: 120px;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);

@@ -10,12 +10,14 @@ const StyledWrapper = styled.footer`
   width: 70%;
   bottom: 0;
   right: 0;
+  z-index: 500;
   @media (min-width: 600px) {
     position: relative;
     height: 100px;
     width: 100%;
     background: #5c9897;
     background-image: ${({ theme }) => theme.colors.pattern};
+    z-index: 100;
   }
   @media (max-height: 750px) and (min-width: 1000px) {
     height: 80px;
@@ -51,7 +53,6 @@ const StyledWrapper = styled.footer`
       font-size: 3rem;
       align-items: center;
       justify-content: space-between;
-      z-index: 1000;
       .contact {
         display: flex;
         align-items: center;

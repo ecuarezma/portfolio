@@ -10,7 +10,7 @@ const StyledWrapper = styled.header`
   display: flex;
   justify-content: center;
   width: 100%;
-  z-index: 100;
+  z-index: 1000;
 
   .header {
     font-family: "Raleway", sans-serif;

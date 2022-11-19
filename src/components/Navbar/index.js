@@ -8,6 +8,7 @@ const StyledNavbar = styled.nav`
   width: 100vw;
   bottom: 0;
   transition: none;
+  z-index: 300;
 
   @media (min-width: 600px) {
     display: flex;
@@ -16,7 +17,6 @@ const StyledNavbar = styled.nav`
     justify-content: center;
     height: 100%;
     width: 35%;
-    z-index: 300;
   }
 
   @media (max-height: 600px) and (min-width: 1000px) {
